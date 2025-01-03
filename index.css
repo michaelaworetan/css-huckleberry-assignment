@@ -1,3 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
 * {
     box-sizing: border-box;
 }
+
+:root {
+    --border: 3px solid red;
+    --border2: 3px solid yellow;
+    --border3: 3px solid green;
+    --border4: 2px solid black;
+}
+/* mobile  */
+body{
+    max-width: 390px;
+    min-height: 100vh;
+    border: var(--border4);
+    margin: 0;
+    position: relative;
+    overflow-y: auto;
+    font-family: 'Lato', sans-serif;
+    border-radius: 10px;
+}
+
+#header {
+    padding: 36px 24px;
+    /* border: var(--border2); */
+    display: flex;
+    flex-direction: column;
+}
+
+#header>h1 {
+    font-weight: 800;
+    font-size: 32px;
+}
+
+#header>p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+#header span {
+    color: #009966;
+}
+
+#content-area {
+    /* border: var(--border3); */
+    min-height: 100vh;
+    padding-top: 1px;
+    overflow: hidden;
+    background-color: #666666;
+}
+
+#info-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    /* border: 3px solid blue; */
+    margin-top: 72px;
+    /* padding: 20px; */
+    /* box-sizing: border-box; */
+}
+
+.card-header {
+    height: auto;
+    width: 90%;
+    padding: 8px 24px;
+    background-color: #FFBF00;
+    /* border: 1px solid black; */
+    border-radius: 2px;
+    box-shadow: inset 0px 0px 3px 0px rgba(0,0,0,0.75);
+}
+
+.card-header > h3 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28.8px;
+}
+
+.card-body { 
+    max-height: 400px;
+    overflow-y: hidden;
+    padding: 12px 24px;
+}
+.card-body> p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+}
+
