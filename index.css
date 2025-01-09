@@ -4,41 +4,35 @@
     box-sizing: border-box;
 }
 
-:root {
-    --border: 3px solid red;
-    --border2: 3px solid yellow;
-    --border3: 3px solid green;
-    --border4: 2px solid black;
-}
-
-/* mobile  */
+/* mobile */
 body {
     max-width: 390px;
     min-height: 100vh;
-    border: var(--border4);
     margin: 0;
     position: relative;
     overflow-y: auto;
     font-family: 'Lato', sans-serif;
     border-radius: 10px;
+    overflow-y: auto;
+    border: 2px solid black;
 }
 
 #header {
     padding: 36px 24px;
-    /* border: var(--border2); */
     display: flex;
     flex-direction: column;
 }
 
 #header>h1 {
     font-weight: 800;
-    font-size: 32px;
+    font-size: 24px;
+    line-height: 1.4;
 }
 
 #header>p {
     font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 16px;
+    line-height: 1.6;
 }
 
 #header .tag {
@@ -46,7 +40,6 @@ body {
 }
 
 #content-area {
-    /* border: var(--border3); */
     min-height: 100vh;
     padding-top: 1px;
     overflow: hidden;
@@ -57,10 +50,10 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #FFFFFF;
-    /* border: 3px solid blue; */
-    margin-top: 72px;
-    /* padding: 20px; */
-    /* box-sizing: border-box; */
+    margin-top: 24px;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .card-header {
@@ -68,26 +61,28 @@ body {
     width: 90%;
     padding: 8px 24px;
     background-color: #FFBF00;
-    /* border: 1px solid black; */
-    border-radius: 2px;
+    font-size: 18px;
+    border-radius: 6px;
+    font-weight: 700;
+    line-height: 1.4;
     box-shadow: inset 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
 }
 
 .card-header>h3 {
     font-weight: 700;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 28.8px;
 }
 
 .card-body {
-    max-height: 400px;
-    overflow-y: hidden;
-    padding: 12px 24px;
+    padding: 16px;
+    font-size: 16px;
+    line-height: 1.6;
 }
 
 .card-body>p {
     font-weight: 500;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 30px;
 }
 
@@ -96,21 +91,20 @@ body {
     body {
         max-width: 768px;
         margin: 0 auto;
-        border: var(--border3);
     }
 
     #header {
-        padding: 48px 32px;
+        padding: 32px;
         text-align: left;
     }
 
     #header>h1 {
-        font-size: 34px;
+        font-size: 28px;
     }
 
     #header>p {
-        font-size: 22px;
-        line-height: 32px;
+        font-size: 20px;
+        line-height: 1.8;
     }
 
     .break::after {
@@ -122,27 +116,27 @@ body {
         background-color: #666666;
         padding: 32px 0px;
         border-radius: 8px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        /* Add depth */
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
 
     #info-card {
-        margin: 40px 0px;
+        margin: 32px 0px;
         padding: 24px 0px;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        /* border: var(--border2); */
+        border-radius: 10px;
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
     }
 
     .card-header {
         padding: 16px 24px;
-        font-size: 26px;
+        font-size: 22px;
         width: 60%;
     }
 
     .card-body {
         padding: 16px;
         max-height: none;
+        font-size: 18px;
+        line-height: 28px;
     }
 
 }
@@ -159,7 +153,6 @@ body {
     }
 
     #header {
-        /* border: 4px solid purple; */
         max-width: 800px;
         padding: 0px 24px;
         margin: 80px auto;
@@ -170,45 +163,44 @@ body {
     }
 
     #header>h1 {
-        font-size: 42px;
+        font-size: 36px;
         margin-bottom: 32px;
-        /* border: 4px solid grey; */
     }
 
     #header>p {
         font-size: 24px;
-        line-height: 36px;
-        /* border: var(--border2); */
+        line-height: 1.8;
     }
 
 
     #info-card {
         max-width: 800px;
-        margin: 80px auto;
+        margin: 40px auto;
         padding: 32px 0px;
         border-radius: 10px;
-        /* border: var(--border3); */
+        border-radius: 12px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     }
 
     .card-header {
         width: 60%;
         border-radius: 5px;
-        font-size: 28px;
+        font-size: 26px;
         margin: -10px;
         z-index: 1;
+        padding: 24px;
     }
 
     .card-body {
         padding: 24px;
         max-height: none;
         overflow-y: auto;
-        font-size: 20px;
-        line-height: 32px;
+        font-size: 24px;
+        line-height: 1.8;
     }
 
     .card-body>p {
         margin-bottom: 20px;
-
     }
 
 }
